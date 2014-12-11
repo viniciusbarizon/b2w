@@ -1,0 +1,38 @@
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  border-bottom: 1px solid #00adef;
+  margin: 0;
+}
+
+#menu li a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+#menu li a:hover {
+  text-decoration: underline;
+}
+
+/* Fix IE. Hide from IE Mac \*/
+* html ul#menu  li { float: left; height: 1%; }
+* html ul#menu  li a { height: 1%; }
+/* End */
+
+.submenu {
+  font: 11px Arial, Helvetica, sans-serif;
+  display: none;
+}
+
+.arrow{
+  display: inline-block;
+  float:right;
+  margin-top: 6px;
+  cursor: hand;
+}

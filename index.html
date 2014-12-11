@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>HOT HOT - Submarino.com.br</title>
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/products.css">
+    <link rel="stylesheet" type="text/css" href="js/jPages/css/jPages.css">
+
+    <link rel="shortcut icon" type="image/png" href="http://isuba.s8.com.br/favicon.png" />
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script src="js/menu.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/jPages/js/jPages.js"></script>
+
+    <script>
+    $(function(){
+      $("#menu").load("html/menu.html");
+    });
+
+    $(document).ready(function($) {
+      ajax_products(ordenar_por = "");
+    });
+    </script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="top"><a href="index.html"><img src="images/top.jpg" alt="HOT HOT"></a></div>
+
+      <div id="menu"></div>
+
+      <div id="products">
+        <div id="products_header">
+          <b>Ofertas mais quentes</b>
+          <a href="#" onclick="ajax_products(ordenar_por = 'maiorpreco')" style="float: right; margin-right: 30px">Ordenar Maior Preço</a>
+          <a href="#" onclick="ajax_products(ordenar_por = 'menorpreco')" style="float: right; margin-right: 10px">Ordenar Menor Preço</a>
+          <hr color="#00adef" width="95%" style="margin-left:0px"></hr>
+        </div>
+
+        <div id="products_list">
+          <!-- Pagination panel -->
+          <div class="holder"></div>
+
+          <ul id="products_container"></ul>
+
+          <!-- Pagination panel -->
+          <div class="holder"></div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <p>B2W - Cia Global de Varejo / CNPJ: 00.776.574/0006-60 / Inscrição Estadual: 492.513.778.117 / Endereço: Rua Sacadura Cabral, 102 - Rio de Janeiro, RJ - 20081-902.</br>
+        Todas as regras e promoções são válidas apenas para produtos vendidos e entregues pelo Submarino.</p>
+      </div>
+    </div>
+  </body>
+</html>

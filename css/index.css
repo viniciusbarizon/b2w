@@ -1,0 +1,33 @@
+body{
+	margin:10px 15px;
+  font: 12px Arial, Helvetica, sans-serif;
+	background-color: #F2F2F2;
+}
+
+#main {
+  margin:0 auto;
+  width:760px;
+	text-align:left;
+}
+
+#top {
+  height:143px;
+	margin-bottom: 10px;
+}
+
+#menu {
+	width:160px;
+	float:left;
+	background-color: white;
+	margin-right: 10px;
+}
+
+#products {
+  width: 588px;
+	float: right;
+}
+
+#footer {
+	clear:both;
+  text-align: center;
+}
